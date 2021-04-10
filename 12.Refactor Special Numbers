@@ -1,0 +1,30 @@
+using System;
+
+namespace _12.Refactor_Special_Numbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int kolkko = int.Parse(Console.ReadLine());
+
+            for (int ch = 1; ch <= kolkko; ch++)
+            {
+                int obshto = 0;
+                int takova = ch;
+
+
+                while (takova > 0)
+                {
+                    obshto += takova % 10;
+                    takova = takova / 10;
+                }
+
+                bool toe = (obshto == 5) || (obshto == 7) || (obshto == 11);
+
+                Console.WriteLine($"{ch} -> {toe}");
+
+            }
+        }
+    }
+}
