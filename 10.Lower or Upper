@@ -1,0 +1,21 @@
+using System;
+using System.Globalization;
+namespace _10.Lower_or_Upper
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char name = char.Parse(Console.ReadLine());
+
+            if (char.IsUpper(name))
+            {
+                Console.WriteLine("upper-case");
+            }
+            else if (char.IsLower(name))
+                {
+                Console.WriteLine("lower-case");
+            }
+        }
+    }
+}
